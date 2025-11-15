@@ -23,7 +23,6 @@ header {
     background-color: white;
     z-index: 1000;
 
-
     & .logo {
         & img {
             width: 9em;
@@ -36,8 +35,15 @@ header {
         display: flex;
         justify-content: space-around;
 
+
+
         @media (max-width: 1000px) {
-            display: none;
+            flex-direction: column;
+            align-items: center;
+            text-align: left;
+            justify-content: center;
+            gap: .2em;
+
         }
 
         & ul li {
@@ -46,10 +52,24 @@ header {
             & a {
                 text-decoration: none;
                 color: black;
+
+                @media (max-width: 1000px) {
+                    background-color: grey;
+                    padding: .5em;
+                    display: inline-block;
+                    width: 100px;
+
+                }
             }
 
             & a:hover {
                 text-decoration: underline;
+
+                @media (max-width: 1000px) {
+                    background-color: black;
+                    color: white;
+                    transition: 0.3s ease-in-out;
+                }
             }
 
             & i {
@@ -66,9 +86,11 @@ header {
         display: flex;
         gap: .5em;
 
+
         @media (max-width: 1000px) {
-            width: fit-content;
+            display: none;
         }
+
 
         & button {
             background: transparent;
@@ -258,7 +280,7 @@ header {
                     background-color: rgba(211, 211, 211, 0.534);
                     padding: .4em 1em;
                     border-radius: 20px;
-                    color: rgba(128, 128, 128, 0.589);
+                    color: rgba(39, 37, 37, 0.589);
                     font-weight: bold;
                     margin-left: 1em;
                     margin-right: 1em;
