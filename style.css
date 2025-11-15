@@ -36,6 +36,10 @@ header {
         display: flex;
         justify-content: space-around;
 
+        @media (max-width: 1000px) {
+            display: none;
+        }
+
         & ul li {
             list-style: none;
 
@@ -61,6 +65,10 @@ header {
         width: 250px;
         display: flex;
         gap: .5em;
+
+        @media (max-width: 1000px) {
+            width: fit-content;
+        }
 
         & button {
             background: transparent;
@@ -137,7 +145,11 @@ header {
         margin-right: .7em;
         position: fixed;
         left: 0;
-    
+
+        @media (max-width: 1000px) {
+            display: none;
+        }
+
 
 
 
@@ -196,6 +208,10 @@ header {
         gap: 1em;
         justify-content: center;
         margin-left: 270px;
+
+        @media (max-width: 1000px) {
+            margin-left: 0;
+        }
 
 
 
@@ -288,13 +304,12 @@ header {
 
 
 
-
 .float {
-width: fit-content;
-position: absolute;
-right: 30px;
-bottom: 80px;
-position: fixed;
+    width: fit-content;
+    position: absolute;
+    right: 30px;
+    bottom: 80px;
+    position: fixed;
 
 
     img {
@@ -319,12 +334,12 @@ footer {
     font-size: .9em;
     margin-top: 2em;
     border-top: 1px solid gray;
-    background: linear-gradient(to right,  black 80%, orange);
+    background: linear-gradient(to right, black 80%, orange);
     padding: 1em;
-    
 
 
-   & p {
+
+    & p {
         color: grey;
         letter-spacing: .2em;
     }
